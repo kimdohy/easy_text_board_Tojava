@@ -14,6 +14,17 @@ public class Main {
 			String command = sc.nextLine();
 			if (command.equals("article add")) {
 				System.out.println("== 게시물 등록 ==");
+				System.out.print("제목 :");
+				String title = sc.nextLine();
+				System.out.print("내용 :");
+				String body = sc.nextLine();
+				int id = 1;
+				
+				
+				System.out.println("== 작성된 게시물 내용 ==");
+				System.out.printf("제목 : %s \n",title);
+				System.out.printf("내용 : %s \n",body);
+				System.out.printf("번호 : %d \n",id);
 			} else if (command.equals("article list")) {
 				System.out.println("== 게시물 목록 ==");
 			} else if (command.equals("exit")) {
